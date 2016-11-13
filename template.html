@@ -11,6 +11,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 
+	<style>
+	body{
+		padding-top: 40px;
+	}
+	</style>
+
 <body>
 
 	<!--Navbar -->
@@ -28,11 +34,13 @@
 				<a href = "" class="navbar-brand">Twitter Bot</a>
 			</div> <!-- Navbar Header -->
 			<div class="collapse navbar-collapse" id="navbar-collapse">
+
+			<a href="" class="btn btn-info navbar-btn navbar-right"> Download now</a> 
 				<ul class="nav navbar-nav">
-					<li><a href="#feedback">Feedback</a>
-					<li><a href="#tweetbot">Tweetbot</a>
-					<li><a href="#sourcecode">Source Code</a>
-					<li><a href="#contact">Contact</a>
+					<li><a href="#demo">Demo Pictures</a>
+					<li><a href="#features">Features</a>
+					<li><a href="#faq">FAQ</a>
+					<li><a href="#creators">Creators</a>
 				</ul>
 			</div>
 		</div> <!-- End Container -->
@@ -42,13 +50,203 @@
 
 	<!-- jumbotron -->
 	<div class="jumbotron">
-		<div class="container" text-center>
+		<div class="container text-center">
 			<h1>Twitter Bot</h1>
 			<p>As a movement against online harassment, we bring to you your very own Twitter Bot. This little soldier detects negative tweets within the local region, draws out its sw(ear)ord and tackles the user with a reply. Check it out! </p>
 
-			
+			<div class="btn-group">
+				<a href="" class="btn btn-lg btn-info">Download</a>
+				<a href="" class="btn btn-lg btn-default">Read Inspiration</a>
+				<a href="" class="btn btn-lg btn-info">Spread the word</a>
+			</div>
 		</div> <!-- End container -->
 	</div> <!-- End Jumbotron -->
+
+
+
+
+
+	<!-- Gallery -->
+	<div class="container">
+		<section>
+			<div class="page-header" id="demo">
+				<h2><small>Check out demo pictures</small></h2>
+				<div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#screenshot-carousel" data-slide-to="1"></li>
+						<li data-target="#screenshot-carousel" data-slide-to="2"></li>
+						<li data-target="#screenshot-carousel" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="highway.jpg" alt="Picture caption">
+							<div class="carousel-caption">
+								<p>This is the caption</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="river.jpg" alt="Picture caption">
+							<div class="carousel-caption">
+								<p>This is the caption</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="street.jpg" alt="Picture caption">
+							<div class="carousel-caption">
+								<p>This is the caption</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="painting.jpg" alt="Picture caption">
+							<div class="carousel-caption">
+								<p>This is the caption</p>
+							</div>
+						</div>
+
+					</div> <!-- End Carousel inner -->
+					<!-- left slide button -->
+					<a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<!-- right slide button -->
+					<a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div> <!-- End Carousel -->
+		</section>
+	</div> <!-- End Gallery -->
+
+	<!-- Features -->
+	<div class="container">
+		<section>
+			<div class="page-header" id="features">
+				<h2>Features:<small> Cool features of Twitter Bot. </small></h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-8">
+					<span class="glyphicon glyphicon-star"></span>
+					<h3>Feature # 1</h3>
+					<p></p>
+				</div>
+				<div class="col-lg-4">
+					<img src="imac.jpg" class="img-responsive" alt="image">
+				</div>
+
+			</div> <!-- End row -->
+			<div class="row">
+				<div class="col-lg-8">
+					<span class="glyphicon glyphicon-star"></span>
+					<h3>Feature # 2</h3>
+					<p></p>
+				</div>
+				<div class="col-lg-4">
+					<img src="imac.jpg" class="img-responsive" alt="image">
+				</div>
+			</div> <!-- first image -->
+			<div class="row">
+				<div class="col-lg-8">
+					<span class="glyphicon glyphicon-star"></span>
+					<h3>Feature # 3</h3>
+					<p>This is the heading</p>
+				</div>
+				<div class="col-lg-4">
+					<img src="smartphone.jpg" class="img-responsive" alt="image">
+				</div>
+			</div> <!-- second image -->	
+			<hr>
+			
+
+
+		</section>
+
+
+	</div> <!-- End container -->	
+
+
+
+
+	<div class="container">
+		<div class="page-header" id="faq">
+			<h2>Frequency Asked Questions<small>  </small></h2>
+				<div class="col-lg-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h4>What is this built with?</h4>
+							<p>HTML, CSS, Javascript, Node JS, Twitter API </p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-lg-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h4>Where can we find the source code?</h4>
+							<p>Check out our github page: </p>
+							<a href = "https://github.com/wliang6/Twitter-Bot-vs-Harassment">here</a>
+							<p>This is a solution project for HackRPI'16 aiming to help reduce the frequency and/or severity of online harassment. </p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-lg-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h4>What are some awesome links to check out?</h4>
+							<ul>
+								<li><a href="http://www.hackharassment.com">www.hackharassment.com</a>
+							<p></p>
+						</div>
+					</div> 
+				</div>
+			</div> <!-- end of row -->
+		</div>
+
+
+
+
+
+
+
+	<!-- Creators -->
+	<div class="container">
+		<section>
+			<div class="page-header" id="creators"> 
+				<h2>What creators have to say</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<blockquote>
+						<p>As a movement against online harassment, we bring to you your very own Twitter Bot. This little soldier detects negative tweets within the local region, draws out its sw(ear)ord and tackles the user with a reply. Check it out!</p>
+						<footer>Alan '19 - Graphic designer. Logo creator. Software Developer. </footer>
+					</blockquote>
+				</div>
+				<div class="col-lg-4">
+					<blockquote>
+						<p>As a movement against online harassment, we bring to you your very own Twitter Bot. This little soldier detects negative tweets within the local region, draws out its sw(ear)ord and tackles the user with a reply. Check it out!</p>
+						<footer>Kevin '18 - Mastermind of the Twitter Bot Engine. Software Developer. </footer>
+					</blockquote>
+				</div>
+				<div class="col-lg-4">
+					<blockquote>
+						<p>As a movement against online harassment, we bring to you your very own Twitter Bot. This little soldier detects negative tweets within the local region, draws out its sw(ear)ord and tackles the user with a reply. Check it out!</p>
+						<footer>Winnie '16 - Web creator. Software Developer. </footer>
+					</blockquote>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+	<!-- call to action -->
+	<section>
+		<div class="well">
+			<div class="container text-center">
+				<h7>Copyright @ Twitter Bot</h7>
+				<p>Subs</p>
+			</div>
+		</div> <!-- End Well -->	
+	</section> <!-- Call to action -->
+
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>	
 
 	<!-- Latest compiled and minified JavaScript -->
