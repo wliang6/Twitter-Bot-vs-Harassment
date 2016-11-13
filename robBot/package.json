@@ -1,0 +1,19 @@
+{
+  "name": "robBot",
+  "version": "1.0.0",
+  "description": "Detects harassing tweets in given location, saves
+  the harassing tweet's data into a data file, then retweets a message.",
+  "main": "robBot.js",
+  "scripts": {
+	"start": "node robBot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "taco"
+  ],
+  "author": "kevin",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.5"
+  }
+}
