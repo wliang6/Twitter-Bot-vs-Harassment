@@ -1,10 +1,10 @@
 console.log('robBot initialized\n');
 
 
-var topLattitude = '42.745763';
-var rightLongitude = '-73.650576';
-var bottomLattitude = '42.708057'
-var leftLongitude = '-73.701608';
+var topLattitude = '44';
+var rightLongitude = '-70';
+var bottomLattitude = '40'
+var leftLongitude = '-74';
 var place = [ leftLongitude, bottomLattitude, rightLongitude, topLattitude ]
 
 var Twit = require('twit');
@@ -16,9 +16,13 @@ var stream = T.stream('statuses/filter', { locations: place });
 stream.on('tweet',function(tweet){
 	var string = tweet.text;
 	var count;
-		//harassment words
-		count = (string.match(/MLH/g) || []).length;
-
+		//keyword, In this case it is banana.
+		
+		count = (string.match(/Banana/g) || []).length;
+		//add more keywords with
+		//count += (string.match(/Apples/g) || []).length;
+		
+		//always outputs tweet to command line and saves it to 
 		if(true){
 			var name = tweet.user.screen_name;
 			var dataString = tweet.user.name + "\n" + tweet.user.screen_name + "\n"
@@ -29,12 +33,11 @@ stream.on('tweet',function(tweet){
 			var fs = require('fs');
 			fs.open('data.txt', 'a', 666, function( e, id ) {
 				fs.write( id, dataString, null, 'utf8', function(){
-					fs.close(id, function(){
-					});
+					fs.close(id, function(){});
 				});
 		});
 		if(count>0)
-			tweetIt('-@'+ name +' MLH ftw!');
+			tweetIt('-@'+ name +' just got ROB-BOTED!');
 		}
 });
 
