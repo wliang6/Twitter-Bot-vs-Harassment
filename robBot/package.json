@@ -11,7 +11,7 @@
   "keywords": [
     "taco"
   ],
-  "author": "kevin",
+  "author": "CrazyWonton",
   "license": "ISC",
   "dependencies": {
     "twit": "^2.2.5"
