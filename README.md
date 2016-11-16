@@ -1,8 +1,8 @@
-#robBot
+#RobBot
 
-# Twitter-Bot-vs-Harassment
+##Twitter-Bot-vs-Harassment
 
-Website:
+Website: 
 ##http://robbot.tech
 
 RobBot is written in Javascript and uses node.js as a Javascript runtime to run
@@ -21,3 +21,6 @@ https://www.npmjs.com/package/twit
 https://dev.twitter.com/overview/api
 
 4) Run: `node  robBot.js`
+
+This project was created for HackRPI '16 and won the HackHarassment category. 
+https://devpost.com/software/robbot-v1pmji
