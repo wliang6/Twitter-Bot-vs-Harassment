@@ -8,13 +8,13 @@ var bottomLattitude = '40'
 var leftLongitude = '-74';
 //coordinates currently set to albany
 var Albany = [ leftLongitude, bottomLattitude, rightLongitude, topLattitude ]
-console.log("Location initialized to " + ALbany);
+console.log("Location initialized to " + Albany);
 
 var Twit = require('twit');
 var config = require('./config');
 var T = new Twit(config);
 
-var stream = T.stream('statuses/filter', { locations: place });
+var stream = T.stream('statuses/filter', { locations: Albany });
 
 stream.on('tweet',function(tweet){
 	var string = tweet.text;
