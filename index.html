@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- Author: Winnie -->
+
 <html lang="en">
 <head>
 	<meta charset="utf-8"> 
@@ -55,9 +58,9 @@
 	<!-- jumbotron -->
 	<div class="jumbotron">
 		<div class="container text-center">
-<!-- 			<h1>Robbot</h1> -->
-<img src="images/logo.png" height="200" width = "400">
-			<img src="images/robbotlogo.jpg" height="120" width="120">
+			<!-- 			<h1>Robbot</h1> -->
+			<img src="images/logo.png" height="200" width = "400">
+			<img src="images/robbotlogo.jpg" height="170" width="170">
 			<p>As a movement against online harassment, we bring to you your very own Twitter Bot. This little soldier detects negative tweets within the local region, draws out its sw(ear)ord and tackles the user with a reply. Check it out! </p>
 
 			<div class="btn-group">
@@ -82,12 +85,20 @@
 						<li data-target="#screenshot-carousel" data-slide-to="1"></li>
 						<li data-target="#screenshot-carousel" data-slide-to="2"></li>
 						<li data-target="#screenshot-carousel" data-slide-to="3"></li>
+						<li data-target="#screenshot-carousel"
+						data-slide-to="4"></li>
 					</ol>
 					<div class="carousel-inner">
 						<div class="item active">
-							<img src="images/dataCollection_pic.png" alt="Picture caption">
+							<img src="images/robBot_codePic.png" alt="Picture caption">
 							<div class="carousel-caption">
-								<p>Data collected from tweets onto a txt file.</p>
+								<p>Code for our dear Robbot (safe version)</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/mlhTestBot_codePic.png" alt="Picture caption">
+							<div class="carousel-caption">
+								<p>Code for our dear Robbot (restricted version - MLH demo of code to restrict displaying offensive words)</p>
 							</div>
 						</div>
 						<div class="item">
@@ -97,15 +108,15 @@
 							</div>
 						</div>
 						<div class="item">
-							<img src="images/robBot_codePic.png" alt="Picture caption">
-							<div class="carousel-caption">
-								<p>Code for our dear Robbot</p>
-							</div>
-						</div>
-						<div class="item">
 							<img src="images/run_Pic.png" alt="Picture caption">
 							<div class="carousel-caption">
 								<p>Live data tweets from nearby region</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/dataCollection_pic.png" alt="Picture caption">
+							<div class="carousel-caption">
+								<p>Data collected of negative tweets onto a txt file</p>
 							</div>
 						</div>
 
@@ -126,24 +137,32 @@
 	<div class="container">
 		<section>
 			<div class="page-header" id="features">
-				<h2>Features:<small> Cool features of robBot. </small></h2>
+				<h2>Features:<small> Cool features of RobBot </small></h2>
 			</div>
 			<div class="row">
 				<div class="col-sm-8">
-					<span class="glyphicon glyphicon-star"></span>
-					<h3>Feature</h3>
+					<h3>Features</h3>
 					<p>
 						<ul>
-							<li> robBot detects online harassment / cyberbullying in tweets and works by sending replies!<hr>
-							<li> robBot is written in Javascript and uses node.js as a Javascript runtime to run Download node.js here https://nodejs.org/en/ <hr>
-							<li> Uses Twit open source API. Twit is an open source API which expands upon the functionality of Twitter’s API, allowing for the simple access of Twitter through Javascript code. https://www.npmjs.com/package/twit <hr>
-							<li> Change the fields in the config.js file to gain access to your twitter account. https://dev.twitter.com/overview/api <hr>
+							<li> RobBot detects online harassment and cyberbullying through tweets and gets set to work by retweeting and saving the user into a database.<hr>
+							<li> This project is the winner of the <b>#HackHarassment</b> prize at <a href="https://www.hackrpi.com">HackRPI'16!</a><hr>
+						
 						</ul>
 
 					</p>
+					<h4> More information: </h4>
+					<p>
+						<ul>
+							<li> RobBot is written in Javascript and uses node.js as a Javascript runtime to run Download node.js here https://nodejs.org/en/ 
+							<li> Uses Twit open source API. Twit expands upon the functionality of Twitter’s API, allowing for the simple access of Twitter through Javascript code. https://www.npmjs.com/package/twit 
+							<li> Download source code. Change the fields in the config.js file to gain access to your twitter account. https://dev.twitter.com/overview/api 
+							<li> Run Node.js runtime environment on your window console (ex. node robBot.js) to start the bot. 
+							<hr>
+						</ul>
+					</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="images/twitterlogo.jpg" class="img-responsive" alt="image">
+				<a href="https://twitter.com"><img src="images/twitterlogo.jpg" alt="image" height="80" width="80"></a>
 					<img src="images/hackharassment.jpg" class="img-responsive" alt="image">
 				</div>
 
@@ -167,7 +186,9 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h4>What is this built with?</h4>
-							<p>HTML, CSS, Javascript, Node.js, Twit API (expands functionality of Twitter's API) </p>
+							<p> <b>Front-end:</b> HTML, CSS, Bootstrap
+							<br>
+							<b>Back-end:</b> Javascript, Node.js, Twitter API, Twit API (expands functionality of Twitter's API)</p>
 						</div>
 					</div> 
 				</div>
@@ -175,9 +196,9 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h4>Where can we find the source code?</h4>
-							<p>Check out our github page: </p>
-							<a href = "https://github.com/wliang6/Twitter-Bot-vs-Harassment">here</a>
-							<p>This is a solution project for HackRPI'16 aiming to help reduce the frequency and/or severity of online harassment. </p>
+							<p>Check out our github page: <a href = "https://github.com/wliang6/Twitter-Bot-vs-Harassment">here</a>
+							</p>
+							<p>The project is a part of a wide-effort solution to help reduce the frequency and severity of online harassment. </p>
 						</div>
 					</div> 
 				</div>
@@ -187,6 +208,7 @@
 							<h4>What are some awesome links to check out?</h4>
 							<ul>
 								<li><a href="http://www.hackharassment.com">www.hackharassment.com</a>
+								<li><a href="https://devpost.com/software/robbot-v1pmji">https://devpost.com/software/robbot-v1pmji</a>
 							<p></p>
 						</div>
 					</div> 
@@ -236,7 +258,7 @@
 		<div class="well">
 			<div class="container text-center">
 				<h7>Copyright @ HackRPI 2016</h7>
-				<p>Subs</p>
+				<p>Team RobBot</p>
 			</div>
 		</div> <!-- End Well -->	
 	</section> <!-- Call to action -->
